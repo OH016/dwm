@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 4;        /* border pixel of windows */
-static const unsigned int gappx     = 12;        /* gaps between windows */
+static const unsigned int gappx     = 12;       /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;    /* 0: systray in the right corner, >0: systray on left of status text */
@@ -17,7 +17,7 @@ static const char col_bg[]       = "#131822";
 static const char col_fg[]       = "#C1E8FF";
 static const char *colors[][3]   = {
 	/*               fg      bg      border */
-	[SchemeNorm] = { col_fg, col_bg, col_fg },
+	[SchemeNorm] = { col_fg, col_bg, col_bg },
 	[SchemeSel]  = { col_fg, col_bg, col_fg },
 };
 

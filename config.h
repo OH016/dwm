@@ -16,9 +16,9 @@ static const char dmenufont[]       = "cascadia code:size=12";
 static const char col_bg[]       = "#131822";
 static const char col_fg[]       = "#C1E8FF";
 static const char *colors[][3]   = {
-	/*               fg      bg       border */
-	[SchemeNorm] = { col_fg, col_bg,  col_fg },
-	[SchemeSel]  = { col_fg, col_bg,  col_fg },
+	/*               fg      bg      border */
+	[SchemeNorm] = { col_fg, col_bg, col_fg },
+	[SchemeSel]  = { col_fg, col_bg, col_fg },
 };
 
 /* tagging */

@@ -11,7 +11,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "cascadia code:size=12",":size=12" };
+static const char *fonts[]          = { "Caskaydia Cove Nerd Font:size=12",":size=12" };
 static const char dmenufont[]       = "cascadia code:size=12";
 static const char col_bg[]       = "#131822";
 static const char col_fg[]       = "#C1E8FF";

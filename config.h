@@ -17,10 +17,11 @@ static const char *fonts[]          = { "CaskaydiaCove Nerd Font:size=12",":size
 static const char dmenufont[]       = "Cascadia Code:size=12";
 static const char col_bg[]       = "#131822";
 static const char col_fg[]       = "#C1E8FF";
-static const char *colors[][3]   = {
-	/*               fg      bg      border */
-	[SchemeNorm] = { col_fg, col_bg, col_bg },
-	[SchemeSel]  = { col_fg, col_bg, col_fg },
+static const char col_fl[]	   = "#d1462c";
+static const char *colors[][4]   = {
+	/*               fg      bg      border  float */
+	[SchemeNorm] = { col_fg, col_bg, col_bg, col_fl},
+	[SchemeSel]  = { col_fg, col_bg, col_fg, col_fl},
 };
 
 /* tagging */

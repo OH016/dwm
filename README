@@ -1,9 +1,14 @@
 # 自用dwm
+
 ## 使用补丁
+
 - `autostart-20210120`
 - `barpadding-20211020`
 - `hide_vacant_tags-6.3`
 - `systray-6.4`
 - `uselessgap-20211119`
+
 ## tools/dmenu使用补丁
+
 - `xyw-5.0`
+

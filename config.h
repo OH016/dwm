@@ -17,8 +17,7 @@ static const char *fonts[]          = { "CaskaydiaCove Nerd Font:size=12",":size
 static const char dmenufont[]       = "Cascadia Code:size=12";
 static const char col_bg[]       = "#131822";
 static const char col_fg[]       = "#C1E8FF";
-static const char col_fl[]	   	 = "#ff4700";
-static const char *colors[][4]   = {
+static const char *colors[][3]   = {
 	/*               fg      bg      border */
 	[SchemeNorm] = { col_fg, col_bg, col_bg },
 	[SchemeSel]  = { col_fg, col_bg, col_fg },
@@ -33,7 +32,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "st",  			NULL,       NULL,       0,       			1,           -1 },
+	{ "st",  			NULL,       NULL,       0,       			1,           -1 }
 };
 
 /* layout(s) */
@@ -130,4 +129,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-

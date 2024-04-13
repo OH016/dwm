@@ -2,14 +2,15 @@
 
 ## 使用补丁
 
-- `autostart-20210120`
-- `barpadding-20211020`
-- `hide_vacant_tags-6.3`
-- `systray-6.4`
-- `uselessgap-20211119`
-- `float-border-color-20231008`
+- `autostart-20210120` 自动启动
+- `barpadding-20211020` 导航栏边距
+- `hide_vacant_tags-6.3` 隐藏空标签
+- `systray-6.4` 系统托盘
+- `uselessgap-20211119` 窗口边距
+- `float-border-color-20231008` 浮动窗口边框颜色
+- `dwm-alwayscenter-20200625-f04cac6` 浮动窗口居中
 
 ## tools/dmenu使用补丁
 
-- `xyw-5.0`
+- `xyw-5.0` 位置调整
 

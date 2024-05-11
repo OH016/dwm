@@ -72,13 +72,13 @@ static const char *vol_dn[] = { "pactl", "set-sink-volume", "0", "-5%", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,					    XK_F10,    spawn,	   	   {.v = vol_up } },
-	{ MODKEY,						XK_F9,	   spawn,	   	   {.v = vol_dn } },
-	{ MODKEY,					    XK_F12,    spawn,	   	   {.v = light_up } },
-	{ MODKEY,						XK_F11,	   spawn,	   	   {.v = light_dn } },
+	{ MODKEY,					    					XK_F10,    spawn,	   	   	 {.v = vol_up } },
+	{ MODKEY,												XK_F9,	   spawn,	   	   	 {.v = vol_dn } },
+	{ MODKEY,					    					XK_F12,    spawn,	   	   	 {.v = light_up } },
+	{ MODKEY,												XK_F11,	   spawn,	   	   	 {.v = light_dn } },
 	{ MODKEY,                       XK_a,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,            			XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,            			XK_F2, 	   spawn,          {.v = lock } },
+	{ MODKEY,            						XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,            						XK_F2, 	   spawn,          {.v = lock } },
 	{ MODKEY|ShiftMask,            	XK_s, 	   spawn,          {.v = screenshot } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -89,7 +89,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z, 	   zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,             			XK_q,      killclient,     {0} },
+	{ MODKEY,             					XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },

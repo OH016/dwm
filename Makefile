@@ -9,7 +9,7 @@ OBJ = ${SRC:.c=.o}
 all: dwm
 
 .c.o:
-	${CC} -c ${CFLAGS} $<
+	${CC} -march=x86-64-v4 -c ${CFLAGS} $<
 
 ${OBJ}: config.h config.mk
 

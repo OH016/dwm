@@ -180,14 +180,26 @@ static Monitor *createmon(void);
 static void destroynotify(XEvent *e);
 static void detach(Client *c);
 static void detachstack(Client *c);
-static Monitor *dirtomon(int dir);
+
+// OH016: 不使用多显示器快捷键
+
+// static Monitor *dirtomon(int dir);
+
+// OH016: END
+
 static void drawbar(Monitor *m);
 static void drawbars(void);
 static void enternotify(XEvent *e);
 static void expose(XEvent *e);
 static void focus(Client *c);
 static void focusin(XEvent *e);
-static void focusmon(const Arg *arg);
+
+// OH016: 不使用多显示器快捷键
+
+// static void focusmon(const Arg *arg);
+
+// OH016: END
+
 static void focusstack(const Arg *arg);
 static Atom getatomprop(Client *c, Atom prop);
 static int getrootptr(int *x, int *y);
@@ -232,7 +244,13 @@ static void showhide(Client *c);
 static void spawn(const Arg *arg);
 static Monitor *systraytomon(Monitor *m);
 static void tag(const Arg *arg);
-static void tagmon(const Arg *arg);
+
+// OH016: 不使用多显示器快捷键
+
+//static void tagmon(const Arg *arg);
+
+// OH016: END
+
 static void tile(Monitor *m);
 static void togglebar(const Arg *arg);
 static void togglefloating(const Arg *arg);
@@ -778,6 +796,9 @@ detachstack(Client *c)
 	}
 }
 
+// OH016: 不使用多显示器快捷键
+
+/*
 Monitor *
 dirtomon(int dir)
 {
@@ -792,6 +813,9 @@ dirtomon(int dir)
 		for (m = mons; m->next != selmon; m = m->next);
 	return m;
 }
+*/
+
+// OH016: END
 
 void
 drawbar(Monitor *m)
@@ -932,6 +956,9 @@ focusin(XEvent *e)
 		setfocus(selmon->sel);
 }
 
+// OH016: 不使用多显示器快捷键
+
+/*
 void
 focusmon(const Arg *arg)
 {
@@ -945,6 +972,9 @@ focusmon(const Arg *arg)
 	selmon = m;
 	focus(NULL);
 }
+*/
+
+// OH016: END
 
 void
 focusstack(const Arg *arg)
@@ -1910,6 +1940,9 @@ tag(const Arg *arg)
 	}
 }
 
+// OH016: 不使用多显示器快捷键
+
+/*
 void
 tagmon(const Arg *arg)
 {
@@ -1917,6 +1950,9 @@ tagmon(const Arg *arg)
 		return;
 	sendmon(selmon->sel, dirtomon(arg->i));
 }
+*/
+
+// OH016: END
 
 void
 tile(Monitor *m)

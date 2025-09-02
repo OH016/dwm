@@ -126,7 +126,7 @@ typedef struct {
 } Layout;
 
 struct Monitor {
-	char ltsymbol[16];
+	char ltsymbol[4];  /* OH016: 布局模式的文字 例如: [=], [~], [M] 我定义的都是三个字的,只要[M]布局的窗口不超过10个就没事(bushi) 设成 4 */
 	float mfact;
 	int nmaster;
 	int num;

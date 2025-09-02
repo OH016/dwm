@@ -1913,8 +1913,8 @@ spawn(const Arg *arg)
 {
 	struct sigaction sa;
 
-	if (arg->v == dmenucmd)
-		dmenumon[0] = '0' + selmon->num;
+//	if (arg->v == dmenucmd)
+//		dmenumon[0] = '0' + selmon->num; // OH016: 多显示屏dmenu在所在显示
 	if (fork() == 0) {
 		if (dpy)
 			close(ConnectionNumber(dpy));

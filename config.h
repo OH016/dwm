@@ -12,7 +12,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Cascadia Mono NF:size=12", "Source Han Sans SC:size=12" };
+static const char *fonts[]          = { "Cascadia Mono NF:size=12", "Source Han Sans CN:size=12" };
 static const char col_bg[]       = "#131822";
 static const char col_fg[]       = "#C1E8FF";
 static const char *colors[][3]      = {
@@ -63,8 +63,8 @@ static const Layout layouts[] = {
 static const char *dmenucmd[] = { "dmenu_run_desktop", /* "-m", dmenumon, */ NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *screenshotcmd[] = { "scrot", "-s", "/home/oh016/Pictures/Screenshots/%Y-%m-%d_%T.png", NULL };
-static const char *upvolcmd[]   = { "amixer", "set", "Master", "5%+",  NULL };
-static const char *downvolcmd[] = { "amixer", "set", "Master", "5%-",  NULL };
+static const char *upvolcmd[]   = { "amixer", "set", "Master", "1%+",  NULL };
+static const char *downvolcmd[] = { "amixer", "set", "Master", "1%-",  NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        			function        argument */

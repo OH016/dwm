@@ -1486,26 +1486,24 @@ resizebarwin(Monitor *m) {
 void
 resizeclient(Client *c, int x, int y, int w, int h)
 {
+// OH016: 把以下删了就全间隔
+// https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-20211119-58414bee958f2.diff
 	XWindowChanges wc;
-	unsigned int n;
+//	unsigned int n;
 	unsigned int gapoffset;
 	unsigned int gapincr;
-	Client *nbc;
+//	Client *nbc;
 
 	wc.border_width = c->bw;
 
 	/* Get number of clients for the client's monitor */
-	for (n = 0, nbc = nexttiled(c->mon->clients); nbc; nbc = nexttiled(nbc->next), n++);
+//	for (n = 0, nbc = nexttiled(c->mon->clients); nbc; nbc = nexttiled(nbc->next), n++);
 
 	/* Do nothing if layout is floating */
 	if (c->isfloating || c->mon->lt[c->mon->sellt]->arrange == NULL) {
 		gapincr = gapoffset = 0;
 	} else {
 		/* Remove border and gap if layout is monocle or only one client */
-
-	//	OH016: 这段是只有一个窗口时没有间隔 把这段判断删了就全间隔
-	//	https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-20211119-58414bee958f2.diff
-	
 	//	if (c->mon->lt[c->mon->sellt]->arrange == monocle || n == 1) {
 	//		gapoffset = 0;
 	//		gapincr = -2 * borderpx;

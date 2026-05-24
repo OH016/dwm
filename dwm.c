@@ -1018,10 +1018,9 @@ getatomprop(Client *c, Atom prop)
 
 	if (XGetWindowProperty(dpy, c->win, prop, 0L, sizeof atom, False, req,
 		&da, &format, &nitems, &dl, &p) == Success && p) {
-		if (nitems > 0 && format == 32)
-			atom = *(long *)p;
-		if (da == xatom[XembedInfo] && dl == 2)
-			atom = ((long *)p)[1];
+		atom = *(Atom *)p;
+		if (da == xatom[XembedInfo] && nitems == 2)
+			atom = ((Atom *)p)[1];
 		XFree(p);
 	}
 	return atom;
